@@ -1,0 +1,24 @@
+<head>
+    <style>
+        p {
+            margin-left: 40px;
+        }
+        h3 {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body style='font-family:"helvetica"'>
+    <h1>Report for 24h EKG started at {{start_time}}</h1>
+    <h3>'Premature' tags amount</h3>
+    <p>P-wave: {{p_wave_premature}}</p>
+    <p>QRS-complex: {{qrs_complex_premature}}</p>
+    <h3>Heart rate</h3>
+    <p>Mean heart rate: {{mean_heart_rate}} bpm</p>
+    <p>Max heart rate: {{max_heart_rate}} bpm at {{max_heart_rate_time}}</p>
+    <p>Min heart rate: {{min_heart_rate}} bpm at {{min_heart_rate_time}}</p>
+    <br>
+    <img src="file:{{ plot }}", >
+
+</body>
